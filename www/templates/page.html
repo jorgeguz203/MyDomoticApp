@@ -1,0 +1,20 @@
+<ion-view title="MyDomoticApp" id="page1">
+  <ion-content padding="true" class="has-header">
+  	<h5>user: domotic</h5>
+  	<h5>password:hola123 </h5>
+    <form id="page-form3" class="list">
+      <label class="item item-input" id="page-input4">
+        <span class="input-label">UserName</span>
+        <input type="text" ng-model="mdl.user" placeholder="Username">
+      </label>
+    </form>
+    <form id="page-form4" class="list">
+      <label class="item item-input" id="page-input5">
+        <span class="input-label">Password</span>
+        <input type="Password" ng-model="mdl.password" placeholder="Password">
+      </label>
+    </form>
+    <a ui-sref="page2({ user: mdl.user, password:
+        mdl.password })" id="page-button1" class="button button-positive button-block">Login</a>
+  </ion-content>
+</ion-view>

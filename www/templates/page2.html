@@ -1,0 +1,51 @@
+<ion-view title="MyDomoticApp" id="page4">
+
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	 <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+
+ <!-- <ion-content ng-if ="user!='domotic'" ng-if ="password!='hola123'" padding="true" class="has-header">
+  			ng-if ="user=='domotic'" ng-if ="password=='hola123'"
+  	<h1>Invalid user or password!!</h1>
+  </ion-content>-->
+
+  <ion-content padding="true" class="has-header">
+
+
+  	<h1>Welcome to MyDomoticApp</h1>
+
+	<div class="container-fluid bg-3 text-center rowbotonstart">
+	  <h2>My sensors	</h2>
+	  <div class="row rowbotonuser">
+
+	    <div class="col-sm-6 col-md-6 col-lg-6">
+	    	<h3 id="TempeChange">Temperature: </h3>
+	    	<img src="./img/temperature.png" class="imgsensact" style="width:50%" alt="temperature">
+	    </div>
+
+	    <div class="col-sm-6 col-md-6 col-lg-6">
+	    	<h3>Presence:</h3>
+	    	<img ng-if ="presence == 1" alt="presence" src="./img/presence.png" class="imgsensact" style="width:50%" id="imgChangePre"/>
+	    	<img ng-if ="presence == 0" alt="presence" src="./img/presenceOn.png" class="imgsensact" style="width:50%" id="imgChangePre"/>
+      	</div>
+
+	  </div>
+	  <h2>My controls	</h2><br>
+	  <div class="row rowbotonuser">
+	    <div class="col-sm-6">
+	    	<h3>Light:</h3>
+	    	<img ng-if ="ligth == 1" id="imgChangeLight" src="./img/light.png" class="imgsensact" style="width:50%" alt="light" onclick="changeImgL()">
+	    	<img ng-if ="ligth == 0" id="imgChangeLight" src="./img/lightOn.png" class="imgsensact" style="width:50%" alt="light" onclick="changeImgL()">
+
+	    </div>
+	    <div class="col-sm-6">
+	    	<h3>Door:		 	</h3>
+	    	<img ng-if ="door == 1" src="./img/door.png" class="imgsensact" style="width:50%" alt="door" id="imgChangeDoor" onclick="changeImgD()">
+	    	<img ng-if ="door == 0" src="./img/doorOn.png" class="imgsensact" style="width:50%" alt="door" id="imgChangeDoor" onclick="changeImgD()">
+
+	    </div>
+	  </div>
+	</div>
+  </ion-content>
+
+
+</ion-view>
